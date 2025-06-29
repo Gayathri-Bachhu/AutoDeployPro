@@ -38,4 +38,4 @@ The goal is to demonstrate how code pushed to a repository can automatically bui
 
 ## 🚀 Live Demo
 
-👉 [Click here to view the site](https://gayathri-bachhu.github.io/AutoDeployPro/)
+👉 [Click here to view the site]([https://gayathri-bachhu.github.io/AutoDeployPro/](https://funny-chebakia-de56b7.netlify.app/))
