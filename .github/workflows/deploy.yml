@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -18,14 +18,15 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Build the App
+      - name: Build
         run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          publish_branch: gh-pages
+          publish_dir: ./dist
